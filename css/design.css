@@ -164,6 +164,12 @@ a {
 a:hover {
   color: #F06D5D; }
 
+button a {
+  color: #fff;
+  text-decoration: none; }
+button a:hover {
+  color: #eee; }
+
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

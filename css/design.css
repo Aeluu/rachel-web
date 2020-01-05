@@ -220,12 +220,6 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB; }
 
-button a {
-  color: #fff;
-  text-decoration: none; }
-button a:hover {
-  color: #eee; }
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],

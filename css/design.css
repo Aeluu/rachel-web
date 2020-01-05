@@ -398,6 +398,10 @@ hr {
   font-size: 12px;
 }
 
+.nav-wrapper {
+  min-height: 57px;
+}
+
 .label {
   font-size: 12px;
   font-weight: 600;
@@ -440,12 +444,20 @@ hr {
 }
 
 #row-3-group {
-  padding: 0 0 40px 0;
+  padding: 0 0 20px 0;
   text-align: center;
 }
 
 .img {
   width: 100%;
+}
+
+.img-work {
+  width: 100%;
+}
+
+#img-404 {
+  max-width: 400px;
 }
 
 .img-footer {
@@ -462,49 +474,27 @@ hr {
   border-top: 1px solid #E1E1E1;
 }
 
-ul li {
+#box {
+  border: 1px solid #E1E1E1;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#box p {
+  margin-bottom: 0;
+}
+
+
+#footer ul li {
   list-style-type: none;
   text-transform: uppercase;
   font-size: 12px;
   margin: 0;
 }
 
-li a {
+#footer li a {
   text-decoration: none;
-}
-
-/* Tool tip
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted #0E2440;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #0E2440;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip .tooltiptext {
-  width: 160px;
-  top: 100%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 
 /* Skill bar animation
@@ -618,9 +608,9 @@ there.
 @media (min-width: 1200px) {}
 
 
-/* Custom styling for Mobile
+/* Custom styling for Tablet
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 750px) {
+@media (max-width: 550px) {
   .container {
     text-align: center;
   }
@@ -629,8 +619,16 @@ there.
     text-align: left;
   }
 
+  .img-work {
+  margin-top:20px;
+  }
+
   #img-text {
   margin-top: 0;
+  }
+
+  #img-faq {
+  display: none;
   }
 }
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Rachel's website</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/design.css">
+  <link rel="stylesheet" href="css/BeerSlider.css">
+
+
+<!-- Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div class="row" id="row-top">
+      <div class="six columns">
+        <p style="margin-bottom: 4px; font-weight: 400;">Hello 👋🏻 I'm Rachel and I'm a...</p>
+        <h1>Product&nbsp;<span class="text_1">Designer</span><span class="text_2">Manager</span></h1>
+      </div>
+    </div>
+
+  <div class="nav-wrapper">  
+  	<div id="navbar">
+    		<a href="index.html">Home</a>
+        <a href="mywork.html">Work</a>
+        <a href="faq.html">FAQ</a>
+    		<a href="#contact">Contact</a>
+  	</div>
+  </div>
+
+  <div class="row" id="row-left">
+      <div class="twelve columns" style="text-align: center;">
+        <img class="img" id="img-404" src="images/floor.svg">
+        <h5 style="color:#7C808F;">Please check back later!</h5> 
+        <p>I've got so much to share about this adventure, I want to make sure its perfect before its live 🙈</p>
+
+        <a class="button button-primary" href="index.html">Back to the homepage</a>
+    </div>
+  </div>
+
+	<div class="row" id="footer">
+	  	<div class="twelve columns">
+	  		<h5>Want to get in touch?</h5>
+	  		<ul>
+	  			<li>I currently live in Berlin.</li>
+	  			<li style="margin-top:6px;">ph: +49 171 344 6056</li>
+	  			<li>e: mew.aelu@gmail.com</li>
+	  		</ul>
+	  	</div>
+	  	<div class="twelve columns">
+	  		<img class="img-footer" id="contact" src="images/contact-me.svg">
+	  	</div>
+    </div>
+
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+	$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+$(document).ready(function(){
+
+/*! Fades in page on load */
+$('body').css('display', 'none');
+$('body').fadeIn(1000);
+
+});
+
+</script>
+
+</body>
+</html>

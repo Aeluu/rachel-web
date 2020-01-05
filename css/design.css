@@ -453,7 +453,7 @@ hr {
 }
 
 .img-work {
-  width: 100%;
+  max-width: 100%;
 }
 
 #img-404 {

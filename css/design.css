@@ -164,12 +164,6 @@ a {
 a:hover {
   color: #F06D5D; }
 
-button a {
-  color: #fff;
-  text-decoration: none; }
-button a:hover {
-  color: #eee; }
-
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -226,6 +220,11 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB; }
 
+button a {
+  color: #fff;
+  text-decoration: none; }
+button a:hover {
+  color: #eee; }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

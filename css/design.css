@@ -619,8 +619,12 @@ there.
     text-align: left;
   }
 
+  h2 {
+    font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;
+  }
+
   .img-work {
-  margin-top:20px;
+  margin-top: 20px;
   }
 
   #img-text {

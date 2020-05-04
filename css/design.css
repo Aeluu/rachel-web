@@ -410,6 +410,18 @@ hr {
   color: #0E2440;
 }
 
+.label2 {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #aaaaaa;
+}
+
+.article {
+  margin-bottom: 4px;
+}
+
 .sticky {
   position: fixed;
   top: 0;

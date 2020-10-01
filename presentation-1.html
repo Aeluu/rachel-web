@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+    <!-- Meta tags for social media
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Primary Meta Tags -->
+<title>Rachel Nelson's Website</title>
+<meta name="title" content="Rachel Nelson's Website">
+<meta name="description" content="When a creative person has a background in advertising, art direction, ux/ui design, graphic design and a brief stint of door-to-door sales, you get me; the filterless product person.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.usabilitycat.com">
+<meta property="og:title" content="Rachel Nelson's Website">
+<meta property="og:description" content="When a creative person has a background in advertising, art direction, ux/ui design, graphic design and a brief stint of door-to-door sales, you get me; the filterless product person.">
+<meta property="og:image" content="https://www.usabilitycat.com/images/ogmetaimg.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.usabilitycat.com">
+<meta property="twitter:title" content="Rachel Nelson's Website">
+<meta property="twitter:description" content="When a creative person has a background in advertising, art direction, ux/ui design, graphic design and a brief stint of door-to-door sales, you get me; the filterless product person.">
+<meta property="twitter:image" content="https://www.usabilitycat.com/images/ogmetaimg.png">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/design.css">
+  <link rel="stylesheet" href="css/BeerSlider.css">
+
+
+<!-- Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div class="row" id="row-top">
+      <div class="six columns">
+        <p style="margin-bottom: 4px; font-weight: 400;">Hello 👋🏻 I'm Rachel and I'm a...</p>
+        <h2>Lead Product&nbsp;<span class="text_1">Designer</span><span class="text_2">Manager</span></h2>
+      </div>
+    </div>
+
+  <div class="nav-wrapper">  
+  	<div id="navbar">
+    		<a href="index.html">Home</a>
+        <a href="mywork.html">Work</a>
+        <a href="faq.html">FAQ</a>
+    		<a href="#contact">Contact</a>
+  	</div>
+  </div>
+
+  <div class="row" id="row-left">
+      <div class="twelve columns">
+        <h4>In-house user testing at Erento</h4>
+        <p>In 2019 I had the opportunity to present at the Russmedia CTO Meetup; a global meetup made up of department heads, CTO's, CEOs, product managers and designers and developers from various companies in the umbrella of Russmedia. There is no recording of the presentation but you can access the slides here (just swipe left!):</p>
+
+        <div class="slider" style="margin-bottom: 20px;">
+          <div class="slide" id="slide-1"><img style="width: 100%" src="images/presentation/russmedia1.jpg"></div>
+          <div class="slide" id="slide-2"><img style="width: 100%" src="images/presentation/russmedia2.jpg"></div>
+          <div class="slide" id="slide-3"><img style="width: 100%" src="images/presentation/russmedia3.jpg"></div>
+          <div class="slide" id="slide-4"><img style="width: 100%" src="images/presentation/russmedia4.jpg"></div>
+          <div class="slide" id="slide-5"><img style="width: 100%" src="images/presentation/russmedia5.jpg"></div>
+          <div class="slide" id="slide-1"><img style="width: 100%" src="images/presentation/russmedia6.jpg"></div>
+          <div class="slide" id="slide-2"><img style="width: 100%" src="images/presentation/russmedia7.jpg"></div>
+          <div class="slide" id="slide-3"><img style="width: 100%" src="images/presentation/russmedia8.jpg"></div>
+          <div class="slide" id="slide-4"><img style="width: 100%" src="images/presentation/russmedia9.jpg"></div>
+          <div class="slide" id="slide-5"><img style="width: 100%" src="images/presentation/russmedia10.jpg"></div>
+        </div>
+
+        <p>If you have any questions, please get in touch!</p>
+
+
+
+
+        <a class="button button-primary" href="index.html">Back to the homepage</a>
+    </div>
+  </div>
+
+	<div class="row" id="footer">
+	  	<div class="twelve columns">
+	  		<h5>Want to get in touch?</h5>
+	  		<ul>
+	  			<li>I currently live in Berlin.</li>
+	  			<li style="margin-top:6px;">ph: +49 171 344 6056</li>
+	  			<li>e: mew.aelu@gmail.com</li>
+	  		</ul>
+	  	</div>
+	  	<div class="twelve columns">
+	  		<img class="img-footer" id="contact" src="images/contact-me.svg">
+	  	</div>
+    </div>
+
+  </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>
+	$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+$(document).ready(function(){
+
+/*! Fades in page on load */
+$('body').css('display', 'none');
+$('body').fadeIn(1000);
+
+});
+
+</script>
+
+</body>
+</html>

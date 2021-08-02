@@ -52,140 +52,109 @@
   </div>
 
   <div class="container">
-    
+
+
+    <!-- Project Filtering -->
     <div class="row">
-      <div class="six column" style="margin-top: 10%; margin-bottom:5%">
-        <h4 style="font-weight:600;">Hello 👋, I'm <div id="name">Rachel</div></h4>
-        <h4>I'm a <div id="design">designer</div>, <div id="manage">product manager</div> and <div id="generateideas">co-founder</div>.</h4>
+      <div class="six column" style="margin-top: 10%; margin-bottom:2%">
+        <ul id="filterNav" class="filters-list">
+          <h4 style="font-weight:600;">Hello 👋, I'm <li data-filter="*" id="name">Rachel</li></h4>
+          <h4 style="font-weight:300;">I'm a <li id="design" data-filter=".pink">designer</li>, <li id="manage" data-filter=".blue">product manager</li> and <li id="generateideas" data-filter=".green">co-founder</li>.</h4>
+        </ul>  
         <p>I like working with early-stage startups and small teams, which is why I tend to have hybrid design and product management roles. I'm currently a Design Lead that works remotely and travels around the world 🌎<i>(I work European hours)</i>.</p>
       </div>
     </div>
 
 
-    <p style="margin-bottom: 16px"><strong>Products I've worked on:</strong></p>
 
-    <div class="masonry-wrapper">
-      <div class="masonry">
+  <!-- Isotope Projects Wrapper -->
+    <div class="projects-wrapper">
 
-        <a href="talentspace.html">
-        <div class="masonry-item">
-          <div class="masonry-content">
+        <!-- Project Items List -->
+        <div class="projects-list">
+
+          <a href="talentspace.html">
+          <div class="project-item pink blue">
             <h6 class="masonry-title">Talentspace</h6>
             <div id="designtag">Designer</div> <div id="managertag">Design Manager</div>
             <p class="masonry-description">A SaaS web application for hosting online events.</p>
             <p class="masonry-date">Feb 2021 - Current</p>
           </div>
-        </div>
-        </a>
+          </a>
 
-        <a href="erento.html">
-        <div class="masonry-item">
-          <div class="masonry-content">
-            <h6 class="masonry-title">Erento</h6>
-            <div id="designtag">Designer</div> <div id="managertag">Product Manager</div>
-              <p class="masonry-description">An online rental aggregation application.</p>
-              <p class="masonry-date">Jul 2018 - Sep 2020</p>
-          </div>
-        </div>
-        </a>
-
-        <a href="parku.html">
-        <div class="masonry-item">
-          <div class="masonry-content">
-            <h6 class="masonry-title">ParkU</h6>
-            <div id="designtag">Designer</div> <div id="managertag">Product Manager</div>
-              <p class="masonry-description">A native iOS and Android application for parking.</p>
-              <p class="masonry-date">Dec 2016 - Jul 2018</p>
-          </div>
-        </div>
-        </a>
-
-        <a href="mellowingfactory.html">
-        <div class="masonry-item">
-          <div class="masonry-content">
+          <a href="mellowingfactory.html">  
+          <div class="project-item pink green">
             <h6 class="masonry-title">Mellowing Factory</h6>
             <div id="designtag">Designer</div> <div id="cofoundertag">Co-Founder</div>
               <p class="masonry-description">A native iOS application for sleep tracking.</p>
               <p class="masonry-date">Apr 2021 - Current</p>
           </div>
-        </div>
-        </a>
+          </a>
 
-        <a href="groupup.html">
-        <div class="masonry-item">
-          <div class="masonry-content">
-            <h6 class="masonry-title">Groupup</h6>
-            <div id="designtag">Designer</div> <div id="managertag">Product Manager</div> <div id="cofoundertag">Co-Founder</div>
-              <p class="masonry-description">A native iOS marketplace application.</p>
-              <p class="masonry-date">Jan 2018 - Oct 2018</p>
-          </div>
-        </div>
-        </a>
-
-
-        <a href="cookpad.html">
-        <div class="masonry-item">
-          <div class="masonry-content">
+          <a href="cookpad.html">
+          <div class="project-item pink">
             <h6 class="masonry-title">Cookpad</h6>
             <div id="designtag">Designer</div>
               <p class="masonry-description">A native iOS and Android application for recipe sharing.</p>
               <p class="masonry-date">Sep 2020 - May 2021</p>
           </div>
-        </div>
-        </a>
 
+          <a href="erento.html">
+          <div class="project-item pink blue">
+            <h6 class="masonry-title">Erento</h6>
+            <div id="designtag">Designer</div> <div id="managertag">Product Manager</div>
+              <p class="masonry-description">An online rental aggregation application.</p>
+              <p class="masonry-date">Jul 2018 - Sep 2020</p>
+          </div>
+          </a>
 
-        <a href="free2move.html">
-        <div class="masonry-item">
-          <div class="masonry-content">
+          <div class="project-item pink blue green">
+            <h6 class="masonry-title">Groupup</h6>
+            <div id="designtag">Designer</div> <div id="managertag">Product Manager</div> <div id="cofoundertag">Co-Founder</div>
+              <p class="masonry-description">A native iOS marketplace application.</p>
+              <p class="masonry-date">Jan 2018 - Oct 2018</p>
+          </div>
+
+          <div class="project-item pink">
             <h6 class="masonry-title">Free2Move</h6>
             <div id="designtag">Designer</div>
               <p class="masonry-description">A native iOS and Android application for parking.</p>
               <p class="masonry-date">Dec 2015 - Dec 2016</p>
           </div>
+
+          <div class="project-item pink blue">
+            <h6 class="masonry-title">ParkU</h6>
+            <div id="designtag">Designer</div> <div id="managertag">Product Manager</div>
+              <p class="masonry-description">A native iOS and Android application for parking.</p>
+              <p class="masonry-date">Dec 2016 - Jul 2018</p>
+          </div>
+
+          <div class="project-item blue">
+            <h6 class="blog-title">👓 How to execute a product, design or feature (on a budget)</h6>
+            <div id="managertag">Product Management</div>
+            <p style="margin: 0px;">An article about my design and development agile process.</p>
+          </div>
+
+
+          <div class="project-item pink blue">
+            <h6 class="blog-title">📱 Re-designing the Deutsche Bank application</h6>
+            <div id="designtag">Re-design</div>
+            <p style="margin: 0px;">A case study about what I would re-design in the Deutsche Bank app.</p>
+          </div>
+
+          <div class="project-item blue">
+           <h6 class="blog-title"> 🏃🏻‍♀️ How to run a bi-weekly sprint schedule</h6>
+           <div id="managertag">Product Management</div>
+            <p style="margin: 0px;">An article about my preferred sprint schedule and the best touch-points to create between developers and designers.</p>
+          </div>
+
+          <div class="project-item blue">
+            <h6 class="blog-title">💆🏻‍♀️ Prepping for in-house user testing</h6>
+            <div id="designtag">Design</div>
+            <p style="margin: 0px;">A presentation about how I arranged for in-house user testing while at Erento.</p>
+          </div>
         </div>
-        </a>
-
-
-      </div>
     </div>
-
-    <p style="margin-top: 8%; margin-bottom: 16px"><strong>Stuff I wrote:</strong></p>
-    <a href="budgetblog.html">
-    <div class="blog-item">
-      <div class="blog-content">
-        <h6 class="blog-title">👓 How to execute a product, design or feature (on a budget)</h6>
-        <p style="margin: 0px;">An article about my design and development agile process.</p>
-      </div>
-    </div>
-    </a>
-
-    <a href="agileblog.html">
-    <div class="blog-item">
-      <div class="blog-content">
-        <h6 class="blog-title"> 🏃🏻‍♀️ How to run a bi-weekly sprint schedule</h6>
-        <p style="margin: 0px;">An article about my preferred sprint schedule and the best touch-points to create between developers and designers.</p>
-      </div>
-    </div>
-    </a>
-
-    <a href="casestudy-deutschebank.html">
-    <div class="blog-item">
-      <div class="blog-content">
-        <h6 class="blog-title">📱 Re-designing the Deutsche Bank application</h6>
-        <p style="margin: 0px;">A case study about what I would re-design in the Deutsche Bank app.</p>
-      </div>
-    </div>
-    </a>
-
-    <a href="inhousetesting.html">
-    <div class="blog-item">
-      <div class="blog-content">
-        <h6 class="blog-title">💆🏻‍♀️ Prepping for in-house user testing</h6>
-        <p style="margin: 0px;">A presentation about how I arranged for in-house user testing while at Erento.</p>
-      </div>
-    </div>
-    </a>
 
 
   </div><!-- Container end --> 
@@ -201,8 +170,9 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script  src="js/masonry.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/functions.js"></script>
 
 </body>
 </html>

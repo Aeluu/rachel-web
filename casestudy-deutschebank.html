@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Case Study</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Inter:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/design.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="nav">
+    <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+        🐱
+        </div>
+      </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="aboutme.html">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    
+    <a href="index.html"><img id="backarrow" src="img/icons/backarrow.svg"></a>
+    <h4 style="font-weight:600;">Re-designing the Deutsche Bank Application</h4>
+    <p class="label">Case Study</p>
+
+    <h5>Understanding Deutsche Bank's brand</h5>
+    <p>Before getting to the application design, I think it makes sense to dabble into the brand a bit. Overall, I find Deutsche Bank’s entire brand to be a bit archaic; but they could be doing it on purpose. They are an established and well-known bank after all. They use a lot of corporate stock photos and their primary colour is a monotonous, federal blue. Their marketing imagery are filled with massive and robust buildings or structures, or business men in suits talking to happy and attractive customers. Their copywriting is heavily focused on community, maintaining trust, and reminding the public that they have history. They give off a sense of stability and pride.</p>
+
+    <p>Overall, their brand makes me feel like they are a professional business that have standardised practices, corporate policies, and have been around for a long time… and while that impression was accurately depicted, I don't think it's the right approach for the majority of people using native applications today. When I encounter ‘legacy' brands like Deutsche Bank, my initial reaction is not to trust them. As a millennial and an American, this isn't an uncommon feeling. We grew up in the digital age, and dealing with century-old corporations has often been a nuisance, a hassle, or just a plain nightmare. These type of corporations weren't built for us, we had to adapt to it. That paves the way for some harsh realities, and has left a majority of us with a salty impression.</p>
+
+    <img class="imgblog" src="img/db/brand-db.png">
+
+    <h5>Acknowledging that the German market is unique</h5>
+    <p>Fun Fact: Millennial Germans actually prefer to spend an average of +2 hours to handle their finances in person rather than doing everything online. They are far more concerned with their digital security than any other first-world country, and it has made their adaptation to digital products a lot slower. Unlike Americans (who seem to share a hatred of legacy banking brands like Bank of America or Wells Fargo), Germans tend to have a higher level of trust for well-established corporations.</p>
+
+    <p>Allow me to share a personal experience: my ex-boyfriend is German, born and raised in Berlin, 28 years old at the time. He works for a tech company that specialises in migrating legacy platforms to modernised and user-friendly intranets. He loves to explore iPhone applications and often expressed his love for great usability; but when it came to handling finances, he always preferred to visit his bank once or twice a month to pay bills at a physical ATM and get his bank statements printed paper-- even though all those services could easily be done online. He had major trust issues with using online services when they handle something as sensitive as banking. It blew my mind, and this is a really good example of why we need to constantly be talking to our users.</p>
+
+    <h5>Updating the colour palette</h5>
+    <p>Despite this type of branding potentially working for the overall German market, a native mobile application shouldn't feel archaic. So I decided to tweak their palette before designing. The funny thing is, they actually have a really beautiful and bold blue colour for their logo, but they are mostly using the dark blue for backgrounds, and light blue for highlights. The blue in their logo is rarely used in their overall branding, so I decided to use that as my primary colour for the new palette.</p>
+    <img class="imgblog" src="img/db/db-palette.png">
+    <p>I like to design with one colour and add secondary colours by reducing the opacity of the primary. I also prefer a good range of greys for variety in copywriting and displaying text, so I added a few more greys and adjusted the hues for legibility. Lastly, I adjusted the colours for "system red" and "system green" so it is a better contrast to the new primary.</p>
+
+    <h5>The current login</h5>
+    <p>To login to the app, you need to know your branch number, account number, sub-account number and your digital pin. All of this is provided to you when you open an account with Deutsche Bank. Unfortunately there is no way to create your own login, so if I ever encounter a situation where I have to provide these details, I have to refer back to the paper documents that I store somewhere safe. The great news is, after logging in successfully for the first time, you can store your details and easily log in with Face ID. There is also access to a map feature that shows you nearby branches or ATMs from Deutsche Bank, a demo link, and a hamburger menu icon.</p>
+    <img class="imgblog" src="img/db/account-db.png">
+    <p>The demo link is a really unique feature, but I liked it. It allows a user to see all the features that the bank has to offer without having to create an account, and you can interact with the entire app to some degree.</p>
+
+    <p>The hamburger icon takes you to another page that displays "Settings" and Data Privacy + Imprint. I actually never visited this page until now, and the only thing I can do in the settings page is change the background picture. While thats a nice-to-have feature, I found it completely unnecessary and ultimately decided to remove it.</p>
+
+    <h5> The new login</h5>
+    <div class="row"> 
+      <div class="six columns">
+        <p>I kept the actions relatively the same and just improved the overall interface design. Since each branch number, account number and sub-account always share a predefined set of numbers, I represent the placeholder text as 0's so users know how many digits they need to enter.</p>
+        <p>I moved the data privacy and imprint as links at the bottom of the login page, and decided to get rid of the ability to personalise your background. This allowed me to get rid of the hamburger menu because there was nothing to bury there anymore. Giving users the ability to personalise something is nice, but it shouldn't interfere with the user experience.</p>
+      </div>
+      <div class="six columns">
+        <img class="desktopshot" src="img/db/newlogin-db.png">
+      </div>
+    </div>
+
+    <h5>The overview page</h5>
+    <p>When you log in, you are placed in a overview page that scrolls down to highlight 4 major sections:</p>
+
+    <ul>
+      <li><strong>Accounts:</strong> A section that displays an overview of your bank accounts. Navigates users to transaction details and additional transfer options for each account.</li>
+      <li><strong>Transfers:</strong> A section to create a new bank transfer. Provides the options to transfer money, add a new transfer recipient, transfer to a sub-account or create a standing order.</li>
+      <li><strong>Investments:</strong> A section that displays an overview of your investments. Navigates users to their order book or transactions page for each investment-- where they also have access to view assets, order book, and transactions in a tabbed view.</li>
+      <li><strong>Mortgages:</strong> A section that displays an overview of your mortgages. Navigates users to details of each individual mortgage.</li>
+    </ul>
+
+    <p>Each section is more or less an 'overview' of its primary elements, and redirect you to other pages and features. They appear to be ordered in a way that they believe is most important to the user, especially because everything beneath the 'Accounts' section is buried, and not accessible or visible unless you scroll.</p>
+
+    <img class="imgblog" src="img/db/deutsche-bank.png">
+
+    <p>Because these 4 sections seem rather important to their users, I decided the best way to improve this was to add a navigation bar, and split the 4 sections into their own dedicated spaces. Displaying information this way also eliminates the need to display an "overview" of the feature, and provides me with more space to work with.</p>
+
+    <p>To visualise the problem better, I've laid out a simplified version of how Deutsche Bank's current information architecture looks like, and how it would look if we added a navigation bar. If you look closely, you can see that some information becomes redundant when proper navigation structures are put in place:</p>
+
+    <img class="imgblog" src="img/db/ia-db.png">
+
+    <p>Now that I've established that adding a navigation bar would be an improvement, let's go over how I re-designed each section.</p>
+
+    <h5>The account page</h5>
+    <p>One thing that stuck out to me that is consistent with a lot of German banks was this: German banks show you your total account value while also deducting the debts you owe (minus mortgages). So, if you have 2000 € in your checking account, 5000 € in your savings, and 20.000 € in credit card debt, the number you see when you log in is: -13.000 €. So if you're overall value is displaying a negative number every time you log in, I can imagine that being a little stressful-- but when I thought about it, I actually liked the straightforward and honest approach, so I decided to keep the “circle” feature for the Accounts page. It does a good job at displaying how your total value is distributed across your accounts, which are then broken down into what you have (top half of the circle), and what you owe (bottom half of the circle).</p>
+    <img class="imgblog" src="img/db/accounts-db.png">
+
+    <h5>The transfer page</h5>
+    <p>In the current Deutsche Bank app, when you scroll to the "Transfer" section, they display a stored recipient of yours and you can proceed with a transfer. I've actually never made a transfer this way. I've always done it from a specific account, so this pre-formatted feature wasn't useful for me, but I won't dismiss the fact that I'm probably not their primary user. I removed it because transfer recipients always vary, and if a feature such as "standing order" exists, it's not necessary to assume we know what the user wants to do.</p>
+    <div class="row"> 
+      <div class="six columns">
+        <p>I wanted to emphasis the primary action (send money) and then I laid out all the secondary actions related to bank transfers. I also included a short description for each secondary action, mostly because I honestly didn't know what "standing order" was until I interacted with the feature.</p>
+      </div>
+      <div class="six columns">
+        <img class="imgblog" src="img/db/transfers-db.png">
+      </div>
+    </div>
+
+    <h5>The investment page</h5>
+    <p>I'm not actively investing so I felt like I couldn't offer the best solution here, but based on what I know, this section has a lot of potential. I kept most of the information the same, but was able to display it a bit more intuitively. Since Investments now has its own page, we can combine the feature that breaks down all investments at the top, and 'assets', 'order book' and 'transactions' as a tabbed view beneath it. The current design highlighted 'order book' and 'transactions' as buttons on the overview, but 'assets' was hidden unless you visited one of those pages. Once you entered either page, all three pages were weighted the same, so it was a little awkward.</p>
+    <img class="imgblog" src="img/db/investments-db.png">
+    <p>What was displayed on three pages can now be displayed on two. Considering that there was a lot of space to work with on the 'investment details' page, I decided to add a really useful feature: the ability to track how each of your individual investment performed over time. I use a feature similar to this on Coinbase to track my bitcoin, and it is a very easy way to monitor its behaviour. Again, this is a speculative addition, so it might not be necessary.</p>
+
+    <h5>The mortgage page</h5>
+    <p>The very last section is the mortgage page. There isn't a lot to do in the section overall; it simply displays information about each of your mortgages, and how far you are into paying it off. Unlike the other sections, there are not many external actions aside from displaying additional information.</p>
+    <img class="imgblog" src="img/db/mortgage-db.png">
+    <p>Since Mortgages has its own page, I again had a lot more space to work with. In the end, I decided that it was unnecessary to split all the information for each mortgage. Instead, I designed a 'card view' for each mortgage and was easily able to fit all the information inside. I also fixed the copywriting for some of the labels, and displayed them more appropriately. There are no extra levels on this page, but that also means there is an opportunity to add additional features here.</p>
+
+
+    
+
+  </div>
+
+  <div class="footer" id="contact">
+    <p style="margin:4px; font-size:32px;">🐱</p>
+    <strong>Wanna get in touch?</strong>
+    <p style="margin:0px">I am currently in Berlin.</p>
+    <p>email: mew.aelu@gmail.com</p> 
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+
+
+
